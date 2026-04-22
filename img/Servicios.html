@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admision Hospitalaria</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="font-sans m-0 p-0">
+
+<header class="bg-blue-600 text-white px-8 py-4 flex justify-between items-center">
+    <div class="text-xl font-bold">GreenGreen US </div>
+    <nav>
+    <ul class="flex space-x-8">
+      <li class="text-md font-semibold text-white cursor-pointer hover:underline "><a href="Proyecto.html">Inicio</a></li>
+            <li class="text-md font-semibold text-white cursor-pointer hover:underline "><a href="#Tramites-servicios"></a>Solicitar Servicio</li>
+        <li class="text-md font-semibold text-white cursor-pointer hover:underline "><a href="#Tramites-servicios">Tramites/Servicios</a></li>
+      <li class="text-md font-semibold text-white cursor-pointer hover:underline "><a href="#Empleo-trabajo">Empleo/Trabajo</a></li>
+      <li class="text-md font-semibold text-white cursor-pointer hover:underline "><a href="#Historial">Historial Clinico</a></li>
+      <li class="text-md font-semibold text-white cursor-pointer hover:underline "><a href="#acerca-de">Contacto/informacion</a></li>
+    </ul>  
+    </nav>
+</header>
+<!--Navegador secundario con breadcrumbs -->
+<nav class="bg-gray-100 px-3 py-5 rounded-md">
+<ol class="list-reset flex text-blue-600">
+<!-- Primer nivel -->
+<li><a href="Proyecto.html#Tramites-servicios" class="hover:underline hover:text-blue-800">Servicios</a></li>
+<li><span class="mx-2 text-gray-500">»</span></li>
+<!-- Segundo nivel -->
+<li><a href="Servicios.html#urgencias" class="hover:underline hover:text-blue-800">Urgencias</a></li>
+<li><span class="mx-2 text-gray-500">»</span></li>
+<!-- Tercer servicio -->
+<li><a href="Servicios.html#farmacias" class="hover:underline hover:text-blue-800">Farmacias</a></li>
+    <li><span class="mx-2 text-gray-500">»</span></li>
+<!-- Cuarto servicio -->
+<li><a href="Servicios.html#farmacias" class="hover:underline hover:text-blue-800">Pediatria</a></li>
+    <li><span class="mx-2 text-gray-500">»</span></li>
+</ol>
+</nav>
+<!-- Contenedor de urgencias -->
+<section id="urgencias" class="w-full bg-white min-h-screen relative z-10">
+  
+  <!-- Imagen arriba, ocupa todo el ancho -->
+  <div class="w-full">
+    <img src="img/imgA1.webp" alt="Hospital" 
+         class="w-full h-[280px] object-cover shadow-md">
+  </div>
+
+  <!-- Contenedor principal con texto a la izquierda y cuadro a la derecha -->
+  <div class="px-10 py-12 flex flex-col md:flex-row gap-10">
+    
+    <!-- Texto justificado lado izquierdo -->
+    <div class="md:w-2/3 text-justify">
+      <h2 class="text-3xl font-bold text-blue-800">Urgencias</h2>
+      <p class="text-lg text-blue-900 mt-2">
+        Nuestra sala de urgencias está diseñada para brindar atención inmediata y especializada a pacientes que requieren asistencia médica de forma prioritaria. Contamos con personal altamente capacitado disponible de 5:00 a 23:00 horas, equipos modernos y protocolos de respuesta rápida que garantizan seguridad y eficiencia en cada caso.
+        <br><br>
+        En este espacio ofrecemos:
+        <br>- Evaluación y estabilización de emergencias médicas.
+        <br>- Atención integral en situaciones críticas.
+        <br>- Acompañamiento humano y cálido para pacientes y familiares.
+        <br><br>
+        El compromiso del Hospital Green Green US es estar siempre preparados para cuidar de ti en los momentos más importantes.
+      </p>
+
+      <p class="text-lg text-blue-800 mt-16">
+        <strong>EDIFICIO B :</strong><br>
+        Brindamos Atención médica de 5:00 – 23:00 horas.<br>
+        Atención inmediata a personas para emergencias médicas, con personal especializado y protocolos de respuesta rápida.
+      </p>
+      
+     <p class="text-lg text-blue-800 mt-16">
+        <strong>EDIFICIO C :</strong><br>
+        Brindamos Atención médica de 7:00 – 20:30 horas.<br>
+        Atención inmediata a personas para emergencias médicas, con personal especializado y protocolos de respuesta rápida.
+      </p>
+    </div>
+    <!-- Cuadro lateral derecho -->
+    <div class="md:w-1/3">
+    <div class="border border-blue-900 rounded-md p-7 bg-white shadow-md">
+    <h3 class="text-xl font-bold text-blue-500 mb-4">Solicitar Atención del servicio:</h3>
+    <ul class="space-y-3 text-blue-900 font-medium">
+    <li class="hover:text-cyan-400 hover:underline transition duration-300">Solicitar Servicio</li>
+    </ul>
+    </div>
+    </div>
+    </div>
+</section>
+<!-- Contenedor de farmacias -->
+<section id="farmacias" class="w-full bg-white min-h-screen relative z-10">
+  
+  <!-- Imagen arriba, ocupa todo el ancho -->
+  <div class="w-full">
+    <img src="img/imgA2.jpg" alt="Hospital" 
+         class="w-full h-[280px] object-cover shadow-md">
+  </div>
+
+  <!-- Contenedor principal con texto a la izquierda y cuadro a la derecha -->
+  <div class="px-10 py-12 flex flex-col md:flex-row gap-10">
+    
+    <!-- Texto justificado lado izquierdo -->
+    <div class="md:w-2/3 text-justify">
+      <h2 class="text-3xl font-bold text-blue-800">Farmacias</h2>
+      <p class="text-lg text-blue-900 mt-2">
+         Nuestra farmacia está dedicada a garantizar el acceso seguro y oportuno a los medicamentos que los pacientes necesitan para su tratamiento y recuperación. Contamos con un equipo especializado que brinda orientación sobre 
+         el uso adecuado de cada producto, asegurando calidad y confianza en cada entrega.
+      </p>
+    <p class="text-lg text-blue-900 mt-7"> Horario de atención:
+<br>- Lunes a viernes: 8:00 – 20:00 horas
+<br>- Sábados: 9:00 – 14:00 horas
+<br>- Domingos y festivos: Cerrado
+
+</p>
+
+      <p class="text-lg text-blue-800 mt-16">
+        <strong>EDIFICIO B :</strong><br>
+        Nuestro Horario de Atención es 6:00 – 23:00 horas.<br>
+        Brindamos medicinas con su receta medica original especializado y protocolos de respuesta rápida.
+      </p>
+      
+     <p class="text-lg text-blue-800 mt-16">
+        <strong>EDIFICIO C :</strong><br>
+       Nuestro Horario de atencion es de 6:00 – 23:00 horas.<br>
+        Medicinas con su receta medica original especializado y protocolos de respuesta rápida.
+      </p>
+    </div>
+    <!-- Cuadro lateral derecho -->
+   <div class="md:w-1/3">
+    <div class="border border-blue-900 rounded-md p-7 bg-white shadow-md">
+    <h3 class="text-xl font-bold text-blue-500 mb-4">Edificios:</h3>
+    <ul class="space-y-3 text-blue-900 font-medium">
+    <li class="hover:text-cyan-400 hover:underline transition duration-300">Ver Mapa</li>
+    </ul>
+    </div>
+    </div>
+    </div>
+</section>
+<footer id="acerca-de" class="bg-blue-900 text-gray-200 px-10 py-36">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-10" #footer>
+<!-- Logo y descripción -->
+<div>
+<h2 class="text-2xl font-bold text-white">Hospital Green Green US</h2>
+<p class="mt-3 text-sm">
+Brindando soluciones hospitalarias innovadoras y atención médica - tramites, servicios y mas.</p>
+<div class="flex space-x-4 mt-4">
+<!-- Íconos sociales -->
+<a href="#" class="text-gray-200 hover:text-white transition duration-300">
+<i class="fab fa-facebook-f text-xl"></i></a>
+<a href="#" class="text-gray-200 hover:text-white transition duration-300">
+<i class="fab fa-twitter text-xl"></i></a>
+<a href="#" class="text-gray-200 hover:text-white transition duration-300">
+<i class="fab fa-instagram text-xl"></i></a>
+<a href="#" class="text-gray-200 hover:text-white transition duration-300">
+<i class="fab fa-linkedin-in text-xl"></i>
+</a>
+</div>
+</div>
+<!-- Servicios y compañía -->
+<div class="grid grid-cols-2 gap-6"><div>
+<h3 class="text-lg font-semibold text-white">Servicios</h3>
+<ul class="mt-3 space-y-2 text-sm ">
+<li class="hover:text-cyan-500 hover:underline transition duration-300">Farmacias</li>
+<li class="hover:text-cyan-500 hover:underline transition duration-300">Urgencias</li>
+<li class="hover:text-cyan-500 hover:underline transition duration-300">Consulta General</li>
+<li class="hover:text-cyan-500 hover:underline transition duration-300">Edificios</li>
+<li class="hover:text-cyan-500 hover:underline transition duration-300">Laboratorios</li>
+<li class="hover:text-cyan-500 hover:underline transition duration-300">Atención al Paciente</li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-semibold text-white ">Contactanos</h3>
+<ul class="mt-3 space-y-2">
+<li>Acerca de</li>
+<li>Whatsapp +52 557290111</li>
+<li>Direct_Message</li>
+<li>Messenger</li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+</body>
+</html>

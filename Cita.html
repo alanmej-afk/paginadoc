@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admision Hospitalaria</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="font-sans m-0 p-0">
+
+<header class="bg-blue-700 text-white px-8 py-4 flex justify-between items-center">
+    <div class="text-xl font-bold">GreenGreen US </div>
+    <nav>
+    <ul class="flex space-x-8">
+      <li class="text-md font-semibold text-white cursor-pointer hover:underline "><a href="Proyecto.html#inicio">Inicio</a></li>
+      <li class="text-md font-semibold text-white cursor-pointer hover:underline "><a href="Index_proyecto.html">Cita Medica</a></li>
+      <li class="text-md font-semibold text-white cursor-pointer hover:underline "><a href="Proyecto.html#edificios">Unidades/Hospitales</a></li>
+      <li class="text-md font-semibold text-white cursor-pointer hover:underline "><a href="Proyecto.html#servicios">Servicios</a></li>
+      <li class="text-md font-semibold text-white cursor-pointer hover:underline "><a href="Proyecto.html#personal"></a>Directorio/Personal</li>
+      <li class="text-md font-semibold text-white cursor-pointer hover:underline "><a href="Proyecto.html#historial">Historia Clinica</a></li>
+      <li class="text-md font-semibold text-white cursor-pointer hover:underline "><a href="Proyecto.html#acerca-de">Contacto/informacion</a></li>
+    </ul>  
+    </nav>
+</header>
+
+<!-- Contenedor central modificado -->
+<section id="citas" class="w-full bg-gray-300 min-h-screen relative z-10 px-10 py-24">
+  <div class="max-w-lg mx-auto bg-gray-100 p-8 rounded-lg shadow-lg">
+    <h2 class="text-2xl font-bold text-blue-800 mb-6 text-center">Agendar Cita Médica</h2>
+    
+    <form id="formCita" class="space-y-4">
+      <div>
+        <label class="block text-gray-700 font-semibold">Nombre completo</label>
+        <input type="text" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+      </div>
+      
+      <div>
+        <label class="block text-gray-700 font-semibold">Correo electrónico</label>
+        <input type="email" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+      </div>
+      
+      <div>
+        <label class="block text-gray-700 font-semibold">Teléfono</label>
+        <input type="tel" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+      </div>
+      
+      <div>
+        <label class="block text-gray-700 font-semibold">Fecha de la cita</label>
+        <input type="date" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+      </div>
+      
+      <div>
+        <label class="block text-gray-700 font-semibold">Hora</label>
+        <input type="time" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+      </div>
+      
+      <div>
+        <label class="block text-gray-700 font-semibold">Motivo de la consulta</label>
+        <textarea required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+      </div>
+      
+      <button type="submit" class="w-full bg-blue-700 text-white py-2 rounded-lg font-semibold hover:bg-blue-800 transition duration-300">
+        Agendar Cita
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- Modal -->
+<div id="modalCita" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50">
+  <div class="bg-white rounded-lg shadow-lg p-8 max-w-sm w-full text-center">
+    <h3 class="text-xl font-bold text-green-600 mb-4">Cita agendada exitosamente</h3>
+    <p class="text-gray-700 mb-6">Su cita ha sido registrada en nuestro sistema.</p>
+    <button id="cerrarModal" class="bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition duration-300">
+      Cerrar
+    </button>
+  </div>
+</div>
+
+<script>
+  const form = document.getElementById("formCita");
+  const modal = document.getElementById("modalCita");
+  const cerrarModal = document.getElementById("cerrarModal");
+
+  form.addEventListener("submit", function(event){
+    event.preventDefault();
+    modal.classList.remove("hidden");
+    form.reset();
+  });
+
+  cerrarModal.addEventListener("click", function(){
+    modal.classList.add("hidden");
+  });
+</script>
+
+<footer id="acerca-de" class="bg-blue-950 text-gray-200 px-10 py-20">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-10" #footer>
+<!-- Logo y descripción -->
+<div>
+<h2 class="text-2xl font-bold text-white">Hospital Green Green US</h2>
+<p class="mt-3 text-sm">
+Brindando soluciones hospitalarias innovadoras y atención médica - tramites, servicios y mas.</p>
+<div class="flex space-x-4 mt-4">
+<!-- Íconos sociales -->
+<a href="#" class="text-gray-200 hover:text-white transition duration-300">
+<i class="fab fa-facebook-f text-xl"></i></a>
+<a href="#" class="text-gray-200 hover:text-white transition duration-300">
+<i class="fab fa-twitter text-xl"></i></a>
+<a href="#" class="text-gray-200 hover:text-white transition duration-300">
+<i class="fab fa-instagram text-xl"></i></a>
+<a href="#" class="text-gray-200 hover:text-white transition duration-300">
+<i class="fab fa-linkedin-in text-xl"></i>
+</a>
+</div>
+</div>
+<!-- Servicios y compañía -->
+<div class="grid grid-cols-2 gap-20"><div>
+<h3 class="text-lg font-semibold text-white">Servicios</h3>
+<ul class="mt-3 space-y-2 text-sm ">
+<li class="hover:text-[#950] hover:underline transition duration-300">Farmacias</li>
+<li class="hover:text-[#950] hover:underline transition duration-300">Urgencias</li>
+<li class="hover:text-[#950] hover:underline transition duration-300">Consulta General</li>
+<li class="hover:text-[#950] hover:underline transition duration-300">Edificios</li>
+<li class="hover:text-[#950] hover:underline transition duration-300">Laboratorios</li>
+<li class="hover:text-[#950] hover:underline transition duration-300">Atención al Paciente</li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-semibold text-white">Contactanos</h3>
+<ul class="mt-3 space-y-2 text-sm">
+<li>Acerca de</li>
+<li>Whatsapp +52 557290111</li>
+<li>Direct_Message</li>
+<li>Messenger</li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+</body>
+</html>

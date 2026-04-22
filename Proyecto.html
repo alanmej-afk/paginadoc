@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admision Hospitalaria</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="font-sans m-0 p-0">
+
+<header class="bg-blue-700 text-white px-8 py-4 flex justify-between items-center">
+    <div class="text-xl font-bold">GreenGreen US </div>
+    <nav>
+    <ul class="flex space-x-8">
+      <li class="text-md font-semibold text-white cursor-pointer hover:underline "><a href="#inicio">Inicio</a></li>
+      <li class="text-md font-semibold text-white cursor-pointer hover:underline "><a href="Cita.html">Cita Medica</a></li>
+      <li class="text-md font-semibold text-white cursor-pointer hover:underline "><a href="#edificios">Unidades/Hospitales</a></li>
+      <li class="text-md font-semibold text-white cursor-pointer hover:underline "><a href="#servicios">Servicios</a></li>
+      <li class="text-md font-semibold text-white cursor-pointer hover:underline "><a href="#personal"></a>Directorio/Personal</li>
+      <li class="text-md font-semibold text-white cursor-pointer hover:underline "><a href="#Historial">Historia Clinica</a></li>
+      <li class="text-md font-semibold text-white cursor-pointer hover:underline "><a href="#acerca-de">Contacto/informacion</a></li>
+    </ul>  
+    </nav>
+</header>
+
+<main class="relative h-[50vh] flex flex-col items-center justify-center text-center px-6">
+  <!-- Fondo -->
+  <div class="absolute inset-0 bg-[url('https://www.trinityhealthma.org/sites/default/files/2025-11/location-nazareth-hospital_1.jpg')] bg-center bg-no-repeat bg-fixed bg-cover"></div>
+  <div class="absolute inset-0 bg-black/55"></div>
+
+  <!-- Contenido encima (parte superior) -->
+  <div class="relative z-10">
+  <h1 class="text-7xl text-white font-bold">Bienvenidos!</h1>
+  <p class="text-xl text-white mt-4">Atención Medica, tramites, Servicios Extras, Agenda o programa una cita </p>
+  
+  </div>
+  </main>
+
+<section id="unidades" class="w-full bg-gray-100 px-10 py-28">
+  <div class="max-w-6xl mx-auto">
+    <!-- Contenedor principal con texto a la izquierda e imagen a la derecha -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-12">
+      <!-- Texto -->
+      <div>
+        <h2 class="text-3xl font-bold text-blue-800 mb-6">
+        Hospital Green Green US
+        </h2>
+        <p class="text-gray-700 leading-relaxed">
+          El Hospital <strong>GREEN GREEN US</strong> cuenta con diversas unidades
+          estratégicamente ubicadas para brindar atención médica de calidad en
+          diferentes ciudades de Estados Unidos.
+        </p>
+      </div>
+
+      <!-- Imagen -->
+      <div class="flex justify-center">
+        <img src="img/img1.jpg" alt="Hospital en Estados Unidos" 
+             class="rounded-lg shadow-lg w-full md:w-3/4 h-[350px] object-cover">
+      </div>
+    </div>
+
+    <!-- Recuadro de misión -->
+    <div class="bg-white rounded-lg shadow-md p-6 mb-12">
+      <!-- Franja superior de color -->
+      <div class="h-2 bg-blue-600 rounded-t-md mb-4"></div>
+      <h3 class="text-2xl font-bold text-gray-800 mb-3">Misión</h3>
+      <p class="text-gray-600 leading-relaxed">
+        En <strong>Hospital GREEN GREEN US</strong> trabajamos con el compromiso de brindar 
+        atención médica integral, humana y de calidad. Nuestra misión es cuidar la salud 
+        de cada paciente con innovación, profesionalismo y un enfoque centrado en la persona, 
+        promoviendo el bienestar de la comunidad en cada una de nuestras unidades.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Sección Unidades Hospitalarias en Estados Unidos -->
+<section id="edificios" class="w-full bg-gray-200 px-10 py-28">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-blue-800 mb-10 text-center">
+      Unidades Hospitalarias en Estados Unidos
+    </h2>
+
+    <!-- Grid de unidades -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Unidad 1 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+        <img src="img/imgA3.jpg" alt="Hospital Nueva York" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-800 mb-3">GreenGreen US - Nueva York</h3>
+          <p class="text-gray-600"><strong>Dirección:</strong> 123 Madison Ave</p>
+          <p class="text-gray-600"><strong>Ciudad/Estado:</strong> Nueva York, NY</p>
+          <p class="text-gray-600"><strong>Teléfono:</strong> +1 (212) 555-7890</p>
+        </div>
+      </div>
+
+      <!-- Unidad 2 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+        <img src="img/imgA5.avif" alt="Hospital Los Ángeles" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-800 mb-3">GreenGreen US - Los Ángeles</h3>
+          <p class="text-gray-600"><strong>Dirección:</strong> 456 Sunset Blvd</p>
+          <p class="text-gray-600"><strong>Ciudad/Estado:</strong> Los Ángeles, CA</p>
+          <p class="text-gray-600"><strong>Teléfono:</strong> +1 (310) 555-2345</p>
+        </div>
+      </div>
+
+      <!-- Unidad 3 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+        <img src="img/imgA4.jpg" alt="Hospital Chicago" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-800 mb-3">GreenGreen US - Chicago</h3>
+          <p class="text-gray-600"><strong>Dirección:</strong> 789 Michigan Ave</p>
+          <p class="text-gray-600"><strong>Ciudad/Estado:</strong> Chicago, IL</p>
+          <p class="text-gray-600"><strong>Teléfono:</strong> +1 (312) 555-6789</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+  
+<!-- Sección de carrusel de servicios -->
+<section id="servicios" class="w-full bg-blue-100 py-28">
+  <h2 class="text-4xl font-bold text-center text-blue-800 mb-10">Nuestros Servicios</h2>
+
+  <div class="relative max-w-6xl mx-auto py-20">
+    <!-- Contenedor del carrusel -->
+    <div class="flex scroll-smooth snap-x snap-mandatory overflow-x-auto pb-12" id="carousel">
+
+      <!-- Servicio 1 -->
+      <div class="min-w-[450px] bg-white rounded-lg shadow-lg p-6 snap-center flex flex-col items-center mr-10">
+        <img src="img/img2.webp" alt="Urgencias" class="rounded-md mb-4 w-full h-48 object-cover">
+        <h3 class="text-xl font-semibold text-[#900] mb-2">Urgencias</h3>
+        <p class="text-gray-600 text-center mb-4">Atención inmediata a pacientes para emergencias médicas.</p>
+      </div>
+
+      <!-- Servicio 2 -->
+      <div class="min-w-[450px] bg-white rounded-lg shadow-lg p-6 snap-center flex flex-col items-center mr-10">
+        <img src="img/imgA2.jpg" alt="Farmacias" class="rounded-md mb-4 w-full h-48 object-cover">
+        <h3 class="text-xl font-semibold text-blue-600 mb-2">Farmacias</h3>
+        <p class="text-gray-600 text-center mb-4">Medicinas especificadas para pacientes con receta médica.</p>
+      </div>
+
+      <!-- Servicio 3 -->
+      <div class="min-w-[450px] bg-white rounded-lg shadow-lg p-6 snap-center flex flex-col items-center mr-10">
+        <img src="img/img4.jpg" alt="Pediatría" class="rounded-md mb-4 w-full h-48 object-cover">
+        <h3 class="text-xl font-semibold text-blue-600 mb-2">Pediatría</h3>
+        <p class="text-gray-600 text-center mb-4">Cuidado especializado para niños pequeños y adolescentes.</p>
+      </div>
+
+      <!-- Servicio 4 -->
+      <div class="min-w-[450px] bg-white rounded-lg shadow-lg p-6 snap-center flex flex-col items-center mr-10">
+        <img src="img/img5.jpg" alt="Salud en Línea" class="rounded-md mb-4 w-full h-48 object-cover">
+        <h3 class="text-xl font-semibold text-blue-600 mb-2">Salud en Línea</h3>
+        <p class="text-gray-600 text-center mb-4">Guía médica en línea para nuevos integrantes, conocimientos sobre una buena salud.</p>
+      </div>
+
+      <!-- Servicio 5 -->
+      <div class="min-w-[450px] bg-white rounded-lg shadow-lg p-6 snap-center flex flex-col items-center mr-10">
+        <img src="img/img6.jpeg" alt="Laboratorio Clínico" class="rounded-md mb-4 w-full h-48 object-cover">
+        <h3 class="text-xl font-semibold text-[#900] mb-2">Laboratorio Clínico</h3>
+        <p class="text-gray-600 text-center mb-4">Análisis y estudios médicos especializados.</p>
+      </div>
+
+      <!-- Servicio 6 -->
+      <div class="min-w-[450px] bg-white rounded-lg shadow-lg p-6 snap-center flex flex-col items-center mr-10">
+        <img src="img/img7.jpg" alt="Imagenología" class="rounded-md mb-4 w-full h-48 object-cover">
+        <h3 class="text-xl font-semibold text-blue-600 mb-2">Imagenología</h3>
+        <p class="text-gray-600 text-center mb-4">Rayos X, ultrasonido y resonancias.</p>
+      </div>
+
+      <!-- Servicio 7 -->
+      <div class="min-w-[450px] bg-white rounded-lg shadow-lg p-6 snap-center flex flex-col items-center">
+        <img src="img/img9.webp" alt="Rehabilitación" class="rounded-md mb-4 w-full h-48 object-cover">
+        <h3 class="text-xl font-semibold text-blue-600 mb-2">Rehabilitación</h3>
+        <p class="text-gray-600 text-center mb-4">Terapias físicas y recuperación funcional.</p>
+      </div>
+    </div>
+
+    <!-- Flechas de navegación -->
+    <button onclick="document.getElementById('carousel').scrollBy({left:-500, behavior:'smooth'})" 
+            class="absolute -left-16 top-1/2 -translate-y-1/2 bg-[#900] hover:bg-red-700 text-white px-5 py-4 rounded-full shadow-lg">
+      &#8592;
+    </button>
+    <button onclick="document.getElementById('carousel').scrollBy({left:500, behavior:'smooth'})" 
+            class="absolute -right-16 top-1/2 -translate-y-1/2 bg-[#900] hover:bg-red-700 text-white px-5 py-4 rounded-full shadow-lg">
+      &#8594;
+    </button>
+
+    <!-- Puntos indicadores con hover -->
+    <div class="flex justify-center space-x-3 mt-8">
+      <span class="w-3 h-3 bg-blue-500 rounded-full hover:bg-[#900] transition"></span>
+      <span class="w-3 h-3 bg-blue-500 rounded-full hover:bg-[#900] transition"></span>
+      <span class="w-3 h-3 bg-blue-500 rounded-full hover:bg-[#900] transition"></span>
+      <span class="w-3 h-3 bg-blue-500 rounded-full hover:bg-[#900] transition"></span>
+      <span class="w-3 h-3 bg-blue-500 rounded-full hover:bg-[#900] transition"></span>
+      <span class="w-3 h-3 bg-blue-500 rounded-full hover:bg-[#900] transition"></span>
+      <span class="w-3 h-3 bg-blue-500 rounded-full hover:bg-[#900] transition"></span>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Sección Directorio Médico -->
+<section id="personal" class="w-full bg-gray-200 px-10 py-20">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-blue-800 mb-12 text-center">
+      Directorio y Personal - Hospital Green Green US
+    </h2>
+
+    <!-- Grid de doctores -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      
+      <!-- Doctor 1 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+        <img src="img/d5.jpg" alt="Doctor 1" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Dr. Juan Pérez</h3>
+          <p class="text-gray-600"><strong>Teléfono:</strong> +1 (212) 555-1111</p>
+          <p class="text-gray-600"><strong>Consultorio:</strong> 101</p>
+          <p class="text-gray-600"><strong>Edificio:</strong> A</p>
+        </div>
+      </div>
+
+      <!-- Doctor 2 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+        <img src="img/d1.avif" alt="Doctor 2" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Dra. María López</h3>
+          <p class="text-gray-600"><strong>Teléfono:</strong> +1 (310) 555-2222</p>
+          <p class="text-gray-600"><strong>Consultorio:</strong> 202</p>
+          <p class="text-gray-600"><strong>Edificio:</strong> B</p>
+        </div>
+      </div>
+
+      <!-- Doctor 3 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+        <img src="img/d8.webp" alt="Doctor 3" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Dr. Carlos Ramírez</h3>
+          <p class="text-gray-600"><strong>Teléfono:</strong> +1 (312) 555-3333</p>
+          <p class="text-gray-600"><strong>Consultorio:</strong> 303</p>
+          <p class="text-gray-600"><strong>Edificio:</strong> C</p>
+        </div>
+      </div>
+
+      <!-- Doctor 4 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+        <img src="img/d7.jpg" alt="Doctor 4" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Dra. Ana Torres</h3>
+          <p class="text-gray-600"><strong>Teléfono:</strong> +1 (415) 555-4444</p>
+          <p class="text-gray-600"><strong>Consultorio:</strong> 404</p>
+          <p class="text-gray-600"><strong>Edificio:</strong> B</p>
+        </div>
+      </div>
+
+      <!-- Doctor 5 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+        <img src="img/d9.webp" alt="Doctor 5" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Dr. Luis Fernández</h3>
+          <p class="text-gray-600"><strong>Teléfono:</strong> +1 (617) 555-5555</p>
+          <p class="text-gray-600"><strong>Consultorio:</strong> 505</p>
+          <p class="text-gray-600"><strong>Edificio:</strong> A</p>
+        </div>
+      </div>
+
+      <!-- Doctor 6 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+        <img src="img/d12.png" alt="Doctor 6" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Dra. Rosa Martínez</h3>
+          <p class="text-gray-600"><strong>Teléfono:</strong> +1 (702) 555-6666</p>
+          <p class="text-gray-600"><strong>Consultorio:</strong> 606</p>
+          <p class="text-gray-600"><strong>Edificio:</strong> C</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Sección Historial Clínico -->
+<section id="Historial" class="w-full bg-gray-100 py-24">
+  <section class="max-w-7xl mx-auto px0 grid grid-cols-1 md:grid-cols-2 gap-20 items-start">
+    
+    <!-- Texto explicativo a la izquierda -->
+    <div class="flex flex-col space-y-8">
+      <div>
+        <h2 class="text-4xl font-bold text-blue-800 mb-6">Historial Clínico</h2>
+        <p class="text-lg text-black-50 mb-6">
+          El historial clínico es un documento que recopila toda la información médica relevante de un paciente: 
+          antecedentes, diagnósticos, tratamientos y evolución. Es fundamental para garantizar una atención segura, 
+          personalizada y continua.
+        </p>
+        <p class="text-lg text-black-50">
+          En esta sección podrás simular la generación de un archivo clínico con datos completos del paciente. 
+          Este formulario es únicamente informativo y no está conectado a una base de datos.
+        </p>
+      </div>
+
+      <!-- Imagen debajo del texto -->
+      <div>
+        <img src="img/img11.webp" alt="Historial clínico ilustración" 
+             class="rounded-lg shadow-md w-full h-96 object-cover">
+      </div>
+    </div>
+
+    <!-- Formulario a la derecha -->
+<div class="bg-white shadow-lg rounded-lg p-10 md:w-[500px]">
+  <h3 class="text-2xl font-semibold text-blue-800 mb-6 text-center">Generar archivo clínico</h3>
+  
+  <form id="formClinico" class="space-y-6">
+    <!-- Datos personales -->
+    <div>
+      <label class="block text-gray-700 font-semibold mb-2">Nombre completo</label>
+      <input type="text" name="nombre" class="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-[#900]" placeholder="Ej. Juan Pérez" required>
+    </div>
+    <div>
+      <label class="block text-gray-700 font-semibold mb-2">Edad</label>
+      <input type="number" name="edad" class="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-[#900]" placeholder="Ej. 35" required>
+    </div>
+    <div>
+      <label class="block text-gray-700 font-semibold mb-2">Sexo</label>
+      <select name="sexo" class="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-[#900]" required>
+        <option value="">Seleccione...</option>
+        <option>Masculino</option>
+        <option>Femenino</option>
+        <option>Otro</option>
+      </select>
+    </div>
+
+    <!-- Información médica -->
+    <div>
+      <label class="block text-gray-700 font-semibold mb-2">Antecedentes médicos</label>
+      <textarea name="antecedentes" class="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-[#900]" rows="4" placeholder="Ej. Hipertensión, alergias..." required></textarea>
+    </div>
+    <div>
+      <label class="block text-gray-700 font-semibold mb-2">Diagnóstico actual</label>
+      <textarea name="diagnostico" class="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-[#900]" rows="3" placeholder="Ej. Diabetes tipo II" required></textarea>
+    </div>
+    <div>
+      <label class="block text-gray-700 font-semibold mb-2">Tratamiento</label>
+      <textarea name="tratamiento" class="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-[#900]" rows="3" placeholder="Ej. Medicación, dieta, fisioterapia..." required></textarea>
+    </div>
+
+    <!-- Botón -->
+    <div class="text-center">
+      <button type="submit"
+              class="bg-blue-500 hover:bg-cyan-900 text-white font-semibold px-10 py-4 rounded-md transition">
+        Generar archivo clínico
+      </button>
+    </div>
+  </form>
+
+  <!-- Mensaje de éxito -->
+  <div id="mensajeExito" class="hidden mt-6 p-4 bg-green-100 text-green-700 rounded-md text-center font-semibold">
+    Archivo generado con éxito.
+  </div>
+</div>
+
+<script>
+  const form = document.getElementById('formClinico');
+  const mensaje = document.getElementById('mensajeExito');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault(); // Evita recargar la página
+    mensaje.classList.remove('hidden'); // Muestra el mensaje
+    form.reset(); // Limpia los campos
+    // Ocultar el mensaje después de unos segundos (opcional)
+    setTimeout(() => {
+      mensaje.classList.add('hidden');
+    }, 3000);
+  });
+</script>
+  </section>
+</section>
+  
+<footer id="acerca-de" class="bg-blue-950 text-gray-200 px-10 py-28">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-10" #footer>
+<!-- Logo y descripción -->
+<div>
+<h2 class="text-2xl font-bold text-white">Hospital Green Green US</h2>
+<p class="mt-3 text-sm">
+Brindando soluciones hospitalarias innovadoras y atención médica - tramites, servicios y mas.</p>
+<div class="flex space-x-4 mt-4">
+<!-- Íconos sociales -->
+<a href="#" class="text-gray-200 hover:text-white transition duration-300">
+<i class="fab fa-facebook-f text-xl"></i></a>
+<a href="#" class="text-gray-200 hover:text-white transition duration-300">
+<i class="fab fa-twitter text-xl"></i></a>
+<a href="#" class="text-gray-200 hover:text-white transition duration-300">
+<i class="fab fa-instagram text-xl"></i></a>
+<a href="#" class="text-gray-200 hover:text-white transition duration-300">
+<i class="fab fa-linkedin-in text-xl"></i>
+</a>
+</div>
+</div>
+<!-- Servicios y compañía -->
+<div class="grid grid-cols-2 gap-6"><div>
+<h3 class="text-lg font-semibold text-white">Servicios</h3>
+<ul class="mt-3 space-y-2 text-sm ">
+<li class="hover:text-[#950] hover:underline transition duration-300">Farmacias</li>
+<li class="hover:text-[#950] hover:underline transition duration-300">Urgencias</li>
+<li class="hover:text-[#950] hover:underline transition duration-300">Consulta General</li>
+<li class="hover:text-[#950] hover:underline transition duration-300">Edificios</li>
+<li class="hover:text-[#950] hover:underline transition duration-300">Laboratorios</li>
+<li class="hover:text-[#950] hover:underline transition duration-300">Atención al Paciente</li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-semibold text-white">Contactanos</h3>
+<ul class="mt-3 space-y-2 text-sm">
+<li>Acerca de</li>
+<li>Whatsapp +52 557290111</li>
+<li>Direct_Message</li>
+<li>Messenger</li>
+</ul>
+</div>
+</div>
+
+</div>
+</footer>
+</body>
+</html>
